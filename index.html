@@ -1,0 +1,64 @@
+ 
+<!DOCTYPE html>
+<title>SAL Calculator</title>
+<p id="title">SAL Calculator</p>
+<p id ="authorjacob">By Jacob Meimban</p>
+<p id="myP">1+1</p>
+<script type="text/javascript">
+var setting1 = document.getElementById("myP").contentEditable = true;
+function scan() {
+    var text = document.getElementById("myP").textContent
+    var text2 = document.getElementById("myPp");
+    text2.innerHTML = eval(text);
+}
+function tempclear() {
+    var text3 = document.getElementById("myPp");
+    text3.innerHTML = "";
+}
+</script>
+<hr>
+<button id="scan" onclick="scan()">Run</button>
+<button id="scan" onclick="tempclear()">Output Clear</button>
+<hr>
+<p id="myPp"></p>
+<style>
+#myP {
+    font-family: Lucida Console;
+    font-size: 25px;
+    outline: black;
+    color: navy;
+}
+#myPp {
+    font-family: Lucida Console;
+    font-size: 25px;
+    outline: black;
+    color: yellow;
+}
+#title {
+    font-family: Arial;
+    font-size: 50px;
+    color: green;
+}
+#scan {
+    font-size: 15px;
+    font-family: American Typewriter;
+    padding: 10px;
+    margin: 20px
+}
+#authorjacob {
+    font-size: 8px;
+    font-family: Arial;
+    color: grey;
+    margin: 1px;
+}
+</style>
+</html>
+
+
+
+
+
+
+
+
+
